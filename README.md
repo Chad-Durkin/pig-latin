@@ -19,9 +19,12 @@ _This program allows the user to input a year and check if that year is a leap y
 * _The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels._
 * _Input: 3_
 * _Output: 3_
-* _For words beginning with a vowel, add "ay" to the end._
+* _For letter that are vowels, add "ay" to the end._
 * _Input: i_
 * _Output: iay_
+* _For single words that start with vowels, add "ay" to the end._
+* _Input: ask_
+* _Output: askay_
 * _For words beginning with one or more consonants, more all of the first consecutive consonants to the end, and add "ay"._
 * _If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!_
 * _For words beginning with "y", treat "y" as a consonant._
