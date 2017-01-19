@@ -23,12 +23,6 @@ var checkForSingleVowels = function(inputArray, arrayVowels) {
         }
         else if(inputArray[index + 1] === " ")
         {
-          // if(index === 0)
-          // {
-          //   inputArray.splice(index + 1, 0, "ay");
-          //   console.log("targeted the first single vowel at the beggining of the string");
-          //   console.log(inputArray);
-          // }
           if(inputArray[index - 1] === " ")
           {
           inputArray.splice(index + 1, 0, "ay");
@@ -66,6 +60,10 @@ var checkForVowelWords = function(inputArray, arrayVowels) {
           var nextIndex = index + 1;
           while((inputArray[nextIndex] != " ") && (nextIndex < inputArray.length))
           {
+            if((inputArray[nextIndex] === ".") || (inputArray[nextIndex] === ",") || (inputArray[nextIndex] === "!") || (inputArray[nextIndex] === "?"))
+            {
+              break;
+            }
             nextIndex++;
           }
           console.log("made it to the first end of the first word");
@@ -83,6 +81,10 @@ var checkForVowelWords = function(inputArray, arrayVowels) {
           var nextIndex = index + 1;
           while((inputArray[nextIndex] != " ") && (nextIndex < inputArray.length))
           {
+            if((inputArray[nextIndex] === ".") || (inputArray[nextIndex] === ",") || (inputArray[nextIndex] === "!") || (inputArray[nextIndex] === "?"))
+            {
+              break;
+            }
             nextIndex++;
           }
           console.log("made it to the end of a normal word");

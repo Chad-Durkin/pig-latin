@@ -26,12 +26,14 @@ _This program allows the user to input a year and check if that year is a leap y
 * _Input: ask_
 * _Output: askay_
 * _For words beginning with one or more consonants, more all of the first consecutive consonants to the end, and add "ay"._
+* _Input: ski_
+* _Output: iskay_
 * _If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!_
 * _For words beginning with "y", treat "y" as a consonant._
 
 ## Known Bugs
 
-_None_
+__
 
 ## Support and contact details
 
